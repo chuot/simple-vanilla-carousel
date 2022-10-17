@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Vanilla Carousel</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="carousel">
+        <div class="bg-red fg-white">
+            <h1>Slide 1</h1>
+            <p>Maecenas ut lacus placerat, pulvinar sem quis, elementum ipsum. Suspendisse et arcu sit amet risus
+                sagittis accumsan. Nullam luctus consectetur risus, a mollis nunc tincidunt sit amet. Curabitur
+                ullamcorper, augue quis laoreet elementum, orci augue venenatis dolor, eget iaculis ante ante congue
+                ante. Maecenas in quam eu nisl bibendum pellentesque at eu est. Nam tincidunt quis ante vel ullamcorper.
+                Quisque rutrum nisl eu ex mollis, semper lacinia nulla imperdiet. Aenean congue, eros a iaculis aliquam,
+                tortor ipsum dapibus mauris, id iaculis ex diam convallis libero. Praesent in odio ut odio ullamcorper
+                semper quis vitae nisl. Fusce posuere porttitor dui quis ultricies.</p>
+            <div class="buttons">
+                <button onclick="simpleVanillaCarousel.jump(3)">Jump to slide 3</button>
+            </div>
+        </div>
+        <div class="bg-green fg-white">
+            <h1>Slide 2</h1>
+            <p>Nullam dictum a massa sed condimentum. Suspendisse pretium lectus nec est fermentum rutrum. Aenean
+                interdum venenatis arcu. Vivamus porttitor mi nunc, ac scelerisque enim facilisis et. Morbi venenatis
+                diam orci, rutrum pulvinar nulla tempus quis. Curabitur eget dui libero. Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae lectus sit amet turpis egestas
+                blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Donec eget elit eu dui ultricies varius a ac nibh.</p>
+        </div>
+        <div class="bg-blue fg-white">
+            <h1>Slide 3</h1>
+            <p>Integer tellus augue, auctor laoreet nibh id, pretium pellentesque mauris. Aliquam gravida nibh id urna
+                pellentesque vulputate in varius mauris. Suspendisse malesuada sapien sit amet nisl dignissim, et
+                tristique tellus venenatis. Donec ac tristique sem. Aliquam accumsan, nibh nec gravida malesuada, enim
+                felis gravida ante, at tristique neque urna ut dui. Sed congue, elit vitae eleifend rhoncus, nibh libero
+                porta libero, vitae pretium erat neque et nisi. Nulla tincidunt at quam a rhoncus. Nam nec efficitur
+                neque.</p>
+            <div class="buttons">
+                <button onclick="simpleVanillaCarousel.prev()">back</button>
+                <button onclick="simpleVanillaCarousel.next()">next</button>
+            </div>
+        </div>
+        <div class="bg-orange fg-white">
+            <h1>Slide 4</h1>
+            <p>Proin finibus ex ultrices ipsum imperdiet, nec vulputate tortor pulvinar. Curabitur cursus congue ipsum.
+                Nam quis rhoncus arcu. Cras nec nulla nec sem fringilla rhoncus sit amet a augue. Nulla consectetur
+                metus quis elit sagittis ultricies. Proin egestas enim pulvinar vulputate tempor. Sed sapien sem,
+                imperdiet ut magna sit amet, commodo egestas metus. Cras ornare ex sed dictum consectetur. Suspendisse
+                velit elit, rhoncus a rhoncus et, luctus et odio. Vivamus lacus leo, rhoncus eu dapibus non, interdum
+                eget sem. Proin dictum est ac tortor vestibulum, ut bibendum mi fringilla. Morbi non elit blandit,
+                dignissim lectus ut, pellentesque ex. Suspendisse potenti.</p>
+        </div>
+        <div class="bg-magenta fg-white">
+            <h1>Slide 5</h1>
+            <p>Ut pellentesque lectus ut urna aliquam elementum. Suspendisse fermentum odio in libero finibus finibus.
+                Duis ac imperdiet ligula, quis bibendum nisl. Duis at mauris quam. Aliquam erat volutpat. Suspendisse
+                egestas magna eget aliquam auctor. Fusce eu tincidunt est. Aenean auctor neque nisl, in mollis elit
+                accumsan vel. Nulla facilisi. Nam condimentum risus lobortis est posuere facilisis. Aenean ullamcorper
+                pulvinar nulla, eget varius libero. Donec eleifend sed metus at placerat. In dictum orci eget neque
+                congue scelerisque. Nunc imperdiet efficitur purus gravida mattis.</p>
+        </div>
+    </div>
+
+    <script src="simple-vanilla-carousel.js"></script>
+
+    <script>
+        const el = document.getElementById('carousel');
+
+        const options = {
+            delay: 5000,
+        };
+
+        window.simpleVanillaCarousel = new SimpleVanillaCarousel(el, options);
+    </script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+
+</html>
